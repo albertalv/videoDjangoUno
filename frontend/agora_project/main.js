@@ -1,3 +1,4 @@
+import AgoraRTC from "agora-rtc-sdk-ng"
 
 let options =
 {
@@ -6,7 +7,7 @@ let options =
     // Set the channel name.
     channel: 'mainDos',
     // Pass your temp token here.
-    token: '007eJxTYJirunzhsn2ay3M+qqhndO85fpvBIt9lT72Sld5Hl2TmvxMVGIySUlLSzNIsjcyTLUxSLMwSU9KMzYxTk42TE1MNDE1M/TjzUxoCGRmiv6kwMEIhiM/OkJuYmeeSX8zAAACPex/A',
+    token: '007eJxTYDi0ozhC38pTqj3Tx3u9eOuKCU1e8l9Uot98FFnV+7pxxioFBqOklJQ0szRLI/NkC5MUC7PElDRjM+PUZOPkxFQDQxPTpX/zUhoCGRkyO6WZGRkgEMRnZ8hNzMwLzctnYAAAp/og8A==',
     // Set the user ID.
     uid: 0,
     // Set the user role

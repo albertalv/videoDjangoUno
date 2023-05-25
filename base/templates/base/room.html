@@ -2,29 +2,27 @@
 {% load static %}
 {% block content %}
 
-<main>
-    <section id="room-name-wrapper">
-        <p>Room Name: <span id="room-name"></span></p>
-    </section>
-
-    <section id="video-streams"></section>
-
-    <section id="controls-wrapper">
-        <div class="icon-wrapper">
-            <img class="control-icon" id="mic-btn" src="{% static 'images/microphone.svg' %}" />
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Get started with broadcast streaming</title>
+    </head>
+    <body>
+        <h2 class="left-align">Get started with broadcast streaming</h2>
+        <div class="row">
+            <div>
+                <input type="radio" id="host" name="joinAs" value="host">
+                <label>Host</label><br>
+                <input type="radio" id="Audience" name="joinAs" value="audience">
+                <label>Audience</label><br>
+                <button type="button" id="join">Join</button>
+                <button type="button" id="leave">Leave</button>
+            </div>
         </div>
+    </body>
+</html>
 
-        <div class="icon-wrapper">
-            <img class="control-icon" id="camera-btn" src="{% static 'images/video.svg' %}" />
-        </div>
-
-        <div class="icon-wrapper">
-            <img class="control-icon" id="leave-btn" src="{% static 'images/leave.svg' %}" />
-        </div>
-    </section>
-</main>
-
-
-<script type="text/javascript" src="{% static 'assets/AgoraRTC_N-4.17.2.js' %}" ></script>
+<script type="text/javascript" src="{% static 'assets/AgoraRTC_N-4.17.2.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/streams.js' %}" ></script>
 {% endblock content %}
